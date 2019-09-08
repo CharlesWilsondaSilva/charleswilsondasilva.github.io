@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <!-- Layout trabalhado usando tags semânticas -->
+  <head>
+    <!-- definindo conjunto de caracteres para UTF-8 e outros dados para facilitar a indexação -->
+    <meta charset="UTF-8">    
+	<meta name="description" content="Portfolio Template">    
+	<meta name="keywords" content="Portifólio, Design Web, HTML">    
+	<meta name="author" content="Criador de conteúdo">    
+	<meta name=viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- linkando com a folha de estilos do site -->
+    <title>
+      Meu Portfolio
+    </title>
+  </head>
+  <body>
+    <nav> <!-- navbar com menu e logo -->
+      <a id="logotipo" href="index.html">
+        <img src="images/logo-new.png" alt="Meu logo" />
+      </a>
+
+      <ul> <!-- menu com Unordered List -->
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="sobre.html">Sobre</a>
+        </li>
+        <li>
+          <a class="active" href="contato.html">Contato</a><!-- class="active"define qual link foi acessado e sua formatação -->
+        </li>
+      </ul>
+    </nav>
+    <header id="cabecalhocont"> <!-- cabeçalho com id para formatação exclusiva -->
+      <h1>Entre em contato!</h1>
+      <div class = "subtitulo">"Tente mover o mundo – o primeiro passo será mover a si mesmo."<br><br>Platão</h3></div>
+    </header>
+    <hr>
+    <section><!-- separação em divs dentro da section para facilitar formatação e alinhamento responsivo -->
+      <div id="contato"> <!-- esta div faz o alinhamento em display: flex -->
+
+          <form id = "contact" action="#" method="post"> <!-- formulário com fieldset -->
+            <fieldset>
+              <p>Escreva-me uma menssagem </p>
+              <input type="text" id="name" placeholder="Digite Seu Nome Completo:" />
+              <input type="email" id="email" placeholder="Endereço de e-mail:" />
+              <textarea id="message" placeholder="Diga o que pensa"></textarea>
+              <input type="submit" value="Enviar Mensagem" />
+            </fieldset>
+          </form>   
+          <table id="redes"> <!-- tabela com ícones e infos de redes sociais -->            
+            <tr>
+              <td class="celuladupla" rowspan="2">
+                <a href="https://linkedin.com/in/charles-wilson-4102a382/">
+                  <img class = "social" src="images/linkedin.png" alt="logo linkedin" />
+                </a>
+              </td>
+              <td class="celulasimples">LinkedIN</td>
+            </tr>           
+          </table>
+
+      </div>
+    </section>
+    <footer> <!-- rodapé da página também construído usando a semântica -->
+      <p id = "esq">©2019 - Sysnatec - Todos os direitos reservados - Termos de Uso e Política de Privacidade</p>
+        <address><p id = "dir">Charles Wilson da Silva | 11 99274-5303</p></address><!-- tag address facilita indexação de conteúdo por mecanismos de pesquisa -->
+    </footer>
+  </body>
+
+</html>

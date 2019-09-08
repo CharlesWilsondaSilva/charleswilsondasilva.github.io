@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <!-- Layout trabalhado usando tags semânticas -->
+  <head>
+    <!-- definindo conjunto de caracteres para UTF-8 e outros dados para facilitar a indexação -->
+    <meta charset="UTF-8">    
+	<meta name="description" content="Portfolio Template">    
+	<meta name="keywords" content="Portifólio, Design Web, HTML">    
+	<meta name="author" content="Criador de conteúdo">    
+	<meta name=viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- linkando com a folha de estilos do site -->
+    <title>
+      Meu Portfolio
+    </title>
+  </head>
+
+  <body>
+    <nav> <!-- navbar com menu e logo -->
+      <a id="logotipo" href="index.html">
+        <img src="images/logo-new.png" alt="Meu logo" />
+      </a>
+
+      <ul> <!-- menu com Unordered List -->
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="active" href="portfolio.html">Portfolio</a><!-- class="active"define qual link foi acessado e sua formatação -->
+        </li>
+        <li>
+          <a href="sobre.html">Sobre</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <header id="cabecalhocont"> <!-- cabeçalho com id para formatação exclusiva -->
+      <h1>Monitor de Informática</h1>
+      
+    </header>
+    <hr>
+    <section><!-- separação em divs dentro da section para facilitar formatação e alinhamento responsivo -->
+      <div id = "desc_port_item">
+
+          <figure id="imagem_port">
+            <img id="portItem" src="images/portfolio-item-4.png" alt="Item do Portfolio" />
+          </figure>
+          <div id="desc">
+            <h4>Instrutor de Infomática:</h4>              
+            <p>			
+			Ministrava e preparava o material didático das aulas de Informática conforme orientação e conteúdo previamente distribuído, aplicava provas, desenvolvia trabalhos em aula e esclarecia dúvidas.
+			</p>			
+        </div>
+
+      </div>
+    </section>   
+    <footer> <!-- rodapé da página também construído usando a semântica -->
+      <p id = "esq">©2019 - Sysnatec - Todos os direitos reservados - Termos de Uso e Política de Privacidade</p>
+      <address><p id = "dir">Charles Wilson da Silva | 11 99274-5303</p></address><!-- tag address facilita indexação de conteúdo por mecanismos de pesquisa -->
+    </footer>
+  </body>
+
+</html>

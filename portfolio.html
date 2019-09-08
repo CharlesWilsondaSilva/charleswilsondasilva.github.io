@@ -1,0 +1,109 @@
+  <!DOCTYPE html>
+  <html>
+    <!-- Layout trabalhado usando tags semânticas -->
+    <head>
+      <!-- definindo conjunto de caracteres para UTF-8 e outros dados para facilitar a indexação -->
+      <meta charset="UTF-8">    
+	  <meta name="description" content="Portfolio Template">    
+	  <meta name="keywords" content="Portifólio, Design Web, HTML">    
+	  <meta name="author" content="Criador de conteúdo">    
+	  <meta name=viewport" content="width=device-width, initial-scale=1.0">
+      <link href="style.css" rel="stylesheet" type="text/css"> <!-- linkando com a folha de estilos do site -->
+      <title>
+        Meu Portfolio
+      </title>
+    </head>
+
+    <body>
+      <nav> <!-- navbar com menu e logo -->
+        <a id="logotipo" href="index.html">
+          <img src="images/logo-new.png" alt="Meu logo" />
+        </a>
+
+        <ul> <!-- menu com Unordered List -->
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="active" href="portfolio.html">Portfolio</a><!-- class="active"define qual link foi acessado e sua formatação -->
+          </li>
+          <li>
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <header id="cabecalhocont"> <!-- cabeçalho com id para formatação exclusiva -->
+          <h1>Meu portfolio</h1>
+          <div class = "subtitulo"><h3 >Experiência Profissional:</h3></div>
+      </header>
+      <hr>
+      <section><!-- separação em divs dentro da section para facilitar formatação e alinhamento responsivo -->
+        <div class="jobs">
+
+              <figure>
+                <figcaption>
+                  <p class="btn">
+                    <a href="#">Técnico em Infomática</a>
+                  </p>
+                </figcaption>
+                <a href="portfolio_item.html"><!-- abre página com descrição completa do item do portfolio -->
+                  <img src="images/portfolio-item-1.jpg" alt="Ver mais" />
+                </a>
+              </figure>
+
+              <figure>
+                <figcaption>
+                  <p class="btn">
+                    <a href="#">Analista de Banco de dados Estágio</a>
+                  </p>
+                </figcaption>
+                <a href="portfolio_item2.html">
+                  <img src="images/portfolio-item.jpg" alt="Ver mais" />
+                </a>
+              </figure>
+
+              <figure>
+                <figcaption>
+                  <p class="btn">
+                    <a href="#">Monitor de Infomática</a>
+                  </p>
+                </figcaption>
+                <a href="portfolio_item3.html">
+                  <img src="images/portfolio-item-3.jpg" alt="Ver mais" />
+                </a>
+              </figure>
+
+              <figure>
+                <figcaption>
+                  <p class="btn">
+                    <a href="#">Instrutor de Informática</a>
+                  </p>
+                </figcaption>
+                <a href="portfolio_item4.html">
+                  <img src="images/portfolio-item-4.png" alt="Ver mais" />
+                </a>
+              </figure>			  
+        </div>
+		<div>
+		<figure>
+                <figcaption>
+                  <p class="btn">
+                    <a href="#">Expert em Interações</a>
+                  </p>
+                </figcaption>
+                <a href="portfolio_item5.html">
+                  <img src="images/portfolio-item-5.png" alt="Ver mais" />
+                </a>
+              </figure>
+		</div>
+      </section>
+      <footer> <!-- rodapé da página também construído usando a semântica -->
+        <p id = "esq">©2019 - Sysnatec - Todos os direitos reservados - Termos de Uso e Política de Privacidade</p>
+        <address><p id = "dir">Charles Wilson da Silva | 11 99274-5303</p></address><!-- tag address facilita indexação de conteúdo por mecanismos de pesquisa -->
+      </footer>
+    </body>
+
+  </html>

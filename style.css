@@ -1,0 +1,651 @@
+
+/* Formatando a navbar */
+nav {
+  font-weight: bold; /* negrito */
+
+  position: relative; /* posicionamento relativo à sua posição normal */
+
+  overflow: visible; /* conteúdo que extrapole o container se manterá visível */
+
+  width: 100%;
+  height: 52px;
+
+  text-align: center;
+  text-transform: uppercase; /* transfoma o texto para maiúsculas */
+
+  background: #000; /* cor de fundo */
+  box-shadow: 4px 0 2px -2px #000; /* sombra do container: largura-h largura-v blur cor */
+}
+
+nav a {
+  float: right; /* alinhando link atrelado ao logotipo do mennu à direita dentro da navbar */
+}
+
+nav a img { /* alinhando logotipo à direita da nav */
+  position: absolute;
+  top: -46px; /* margem negativa move o logitipo sobre a navbar */
+  right: 0;
+
+  float: right;
+}
+
+ul { /*  formatando a lista para que fique em linha horizontal */
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+li { /* alinhando elementos da lista à esquerda dentro da navbar */
+  float: left;
+}
+
+nav li a { /* formatando elementos do menu */
+  font-size: 18px;
+  font-weight: bold;
+
+  padding: 14px 16px 14px 16px;
+
+  text-align: center;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; /* coloca em maiúsculas */
+
+  color: #a4afb6;
+}
+
+nav li a:hover { /* usando pseudoclasse :hover do elemento a para formatação especial quando o ponteiro do mouse passa por cima do link */
+  color: #fff;
+  background-color: #000;
+}
+
+nav li a.active { /* usando a classe "active" para realçar qual página do portfólio estamos acessando no momento */
+  color: #000;
+  background: #fff url(images/bright-squares.png); /* aplicando textura no fundo do elemento sobre a cor definida anteriormente */
+}
+
+/* ------------------------------------*/
+body {
+  font: 16px Helvetica, Arial, Sans-Serif;
+  line-height: 1.3; /* altura de linha para todo o portfolio */
+
+  width: 70%;
+  margin: 60px auto 0 auto;
+
+  color: #fff;
+  background: url(images/bg-stripes.jpg) fixed no-repeat; /* plano de fundo do site com configuração para que não se repita */
+  background-size: cover; /* propriedade define que o backgound definido acima se extenda sobre todo o fundo do site */
+}
+
+#cabecalho, #cabecalhocont {
+  overflow: hidden;
+
+  min-height: 150px;
+  
+  letter-spacing: 2px;
+
+  color: #000;
+  background: #fff url(images/bright-squares.png); /* aplicando textura no fundo do elemento sobre a cor definida anteriormente */
+  box-shadow: 2px 2px 2px #000; /* sombra do container: largura-h largura-v blur cor */
+  text-shadow: 1px 1px 3px #000; /* sombra do texto: largura-h largura-v blur cor */
+
+}
+
+#cabecalhocont {
+  padding-left: 20px;
+}
+
+#cabecalho h1, #cabecalhocont h1 {
+  font: 34px Georgia, Serif;
+}
+
+#cabecalho h3, #cabecalhocont h3 {
+  font: 24px Georgia, Serif;
+}
+
+.subtitulo {
+  width: 100%;
+  padding: 0;
+}
+
+/* linha do cabeçalho */
+.linha {
+  display: flex; /* conteúdos do container quebrarão de linha, indo para baixo uns dos outros quando a largura da tela mudar para menor */
+
+  width: 100%;
+  align: left;
+  flex-wrap: wrap; /* modo de quebra de linha - só funciona em display: flex */
+  justify-content: center; /* modo de distribuiçao do conteúdo dentro de um container - só funciona em display: flex */
+}
+
+
+/* colunas do header */
+.coluna {
+  position: relative;
+
+  float: left;
+  overflow: none;
+
+  width: 31%;
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* coluna central */
+#center {
+  position: relative;
+}
+
+#fraseefeito {
+  position: relative;
+
+  padding-bottom: 30%;
+
+  transform: translateY(25%);
+  text-align: center;
+}
+
+/* coluna esquerda */
+#lcol {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+/* coluna direita */
+#rcol {
+  overflow: hidden;
+
+  margin-right: 0;
+}
+
+#template {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* botão PORTFOLIO do header */
+#cabecalho p.btn a {
+  font: 200% Helvetica, Arial, Sans-Serif;
+  font-weight: bold;
+
+  display: block;
+  overflow: none;
+
+  max-width: 100%;
+  height: 40px;
+  padding: 2%;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #fff;
+  background: #000;
+  box-shadow: 2px 2px 2px #000;
+}
+
+hr { /* ajuste para que o hr apareça em preto na página */
+  height: 1px;
+  padding: 0;
+
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+/* definição padrão das sections das páginas */
+section {
+  overflow: hidden; /* se o conteúdo ultrapassar o tamanho da section, não surgirão barras de rolagem */
+
+  padding: 10px;
+
+  background: rgba(0, 0, 0, .7);
+  box-shadow: 2px 2px 2px #000;
+}
+
+/* detalhe adicional section com id #informacoes */
+#info {
+  margin-bottom: 10px;
+}
+
+
+/* ----------seção index------------------------- */
+.jobs {
+  display: flex;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#textocont, #informacoes {
+  margin-left: 20px;
+}
+
+
+/* ----------seção about------------------------- */
+
+#sobre {
+  display: flex;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#about {
+  float: left;
+
+  width: 45%;
+
+  text-align: justify;
+}
+
+figure#profile {
+  float: left;
+
+  width: 45%;
+}
+
+#perfil {
+  width: 100%;
+}
+/* ----------seção descrição item portfolio------------------------- */
+
+#desc_port_item {
+  display: flex;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#desc {
+  float: left;
+
+  width: 45%;
+
+  text-align: justify;
+}
+
+figure#imagem_port {
+  float: left;
+
+  width: 45%;
+}
+
+/* --------  figuras --------------------- */
+
+
+figure {
+  float: left;
+
+  width: 17%;
+  min-width: 17%;
+
+  text-align: center;
+  
+
+}
+
+figure#habilidade {
+  float: left;
+
+  width: 17%;
+  min-width: 17%;
+
+  text-align: center;
+
+  box-shadow: none;
+}
+
+
+figcaption p {
+  width: 100%;
+  margin: 0;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+figcaption p.btn {
+  width: 100%;
+  margin: 0;
+
+  text-align: center;
+
+  color: #fff;
+  background-color: #000;
+  
+  box-shadow: 2px 2px 2px #000;
+}
+
+figcaption a {
+  font-weight: bold;
+
+  text-decoration: none;
+
+  color: #fff;
+}
+
+figure img {
+  width: 100%;
+  box-shadow: 2px 2px 2px #000;
+}
+
+figure#habilidade img {
+  width: 100%;
+
+  box-shadow: none;
+}
+
+
+
+/* ---- contato --- */
+#contato {
+  display: flex;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ----- contato ----- */
+#contact {
+  float: left;
+
+  width: 42%;
+
+  text-align: justify;
+
+  color: #000;
+  background: #b1b6b8;
+}
+
+#redes {
+  width: 42%;
+
+  text-align: center;
+
+}
+
+
+/* ------ formulário ------ */
+
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  width: 100%;
+  margin-right: 20px;
+
+  text-align: justify;
+}
+
+#contact input {
+  font-family: sans-serif;
+  font-size: 16px;
+
+  width: 80%;
+  height: 35px;
+  margin: 0 0 20px 0;
+  padding: 5px 20px 0 20px;
+
+  color: #000;
+  background: #525558;
+  text-shadow: 0 -1px 0 #525558;
+}
+
+input::placeholder { /* usando pseudoelemento ::placeholder para formatar o texto de dica do formulário */
+  color: #000;
+  text-shadow: 0 -1px 0 #46474c;
+}
+
+#contact textarea {
+  font-family: sans-serif;
+  font-size: 16px;
+
+  overflow: auto;
+
+  width: 80%;
+  height: 170px;
+  margin: 0 0 20px 0;
+  padding: 12px 20px 0 20px;
+
+  color: #000;
+  background: #525558;
+  text-shadow: 0 -1px 0 #46474c;
+}
+
+#contact::placeholder {
+  color: #000;
+  text-shadow: 0 -1px 0 #46474c;
+}
+
+
+#contact input:focus, #contact textarea:focus /* formatando fundo dos inputs com gradiente usando pseudoclasses */
+{
+  background: linear-gradient(top, #46474c 0%, #606268 20%);
+}
+
+#contact input[type=submit] {
+  width: 55%;
+  height: 52px;
+  margin: 0 auto;
+  padding: 10px 15px;
+
+  cursor: pointer;
+
+  color: #fff;
+  border-radius: 5px;
+  background: #000;
+}
+
+/* --- Redes Sociais --- */
+table {
+  width: 100%;
+  padding: 5%;
+}
+
+.celulasimples {
+  width: 50%;
+  padding: 2%;
+
+  text-align: left;
+
+
+}
+
+.celuladupla {
+  width: 50%;
+  padding: 1%;
+
+  text-align: right;
+}
+
+.social {
+  height: 10%;
+}
+
+
+
+/* footer das páginas */
+footer {
+  display: flex;
+
+  width: 100%;
+
+  text-shadow: 1px 1px 3px #000;
+  
+  justify-content: space-between;
+}
+
+/* ---------- @medias para diferentes larguras de tela ------------- */
+
+@media only screen and (max-width: 530px) {
+  body { width: 97%; margin: 30vw auto; min-width: 90%; }
+
+  nav ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  nav a img { top: -30vw; right: 32%; }  
+  nav li a { padding: 14px 10px 14px 10px; }
+
+  .coluna{ width: 95%; }
+  #lcol { text-align: center; }
+  
+  figure { width: 55%; min-width: 50%; }
+  figure#habilidade{ width: 55%; } 
+  
+  #contact input[type=submit] { width: 50%; }
+  
+
+  #informacoes, #textocont, #contact, #redes, #about, figure#profile, figure#imagem_port, #desc { width: 95%; }
+}
+
+@media only screen and (max-width: 680px) {
+  body { width: 95%; margin: 150px auto; min-width: 90%; }
+
+  nav ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  nav a img { top: -150px; right: 33%; }
+  nav li a { padding: 14px 10px 14px 10px; }  
+  
+  .coluna{ width: 95%; }
+  #lcol { text-align: center; }
+  
+  figure { width: 50%; min-width: 35%; }
+  figure#habilidade{ width: 55%; }
+  
+  #contact input[type=submit] { width: 50%; }
+
+  #informacoes, #textocont, #contact, #redes, #about, figure#profile, figure#imagem_port, #desc { width: 90%; }   
+} 
+
+
+@media only screen and (min-width: 681px) and (max-width: 900px) {
+  body { width: 90%; }
+
+  .coluna{ width: 45%; }
+  #lcol { display: flex; flex-direction: column; justify-content: center; }
+  
+  figure { width: 45%; min-width: 40%; }
+  figure#habilidade{ width: 30%; }
+  
+  #contact input[type=submit] { width: 50%; }
+
+  #informacoes, #textocont, #contact, #redes, #about, figure#profile, figure#imagem_port, #desc { width: 90%; }   
+}
+
+
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  body { width: 80%; }
+  
+  .coluna{ width: 45%; }
+  
+  figure { width: 25%; min-width: 20%; }
+  figure#habilidade{ width: 35%; }
+  
+  #contact input[type=submit] { width: 50%; }
+
+  #informacoes, #textocont, #contact, #redes, #about, figure#profile, figure#imagem_port, #desc { width: 95%; } 
+}
+
+@media only screen and (min-resolution: 1.5dppx){    
+  body { width: 97%; margin: 20vw auto; font-size: 3vw; min-width: 90%; }
+
+  nav li a { font-size: 4.5vw; padding: 1vw 2.5vw 1vw 2.5vw; }
+  nav { height: 8vw;}
+  nav ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  nav a img { top: -20vw; right: 37%; width: 220px; }
+
+  .coluna{ width: 95%; }
+  #lcol { text-align: center; }
+
+  #cabecalho p.btn a { height: 8vw; }
+  #cabecalho h1, #cabecalhocont h1 { font: 8vw Georgia, Serif; }
+  #cabecalho h3, #cabecalhocont h3 { font: 6vw Georgia, Serif; }
+
+  figure { width: 55%; min-width: 35%; }
+  figure#habilidade{ width: 55%; } 
+  figcaption p { font-size: 4vw;}
+
+  #contact { font-size: 4vw; }
+  #contact textarea { font-size: 4vw;  height: 15vw; }
+  #contact input { font-size: 4vw; height: 8vw; }
+  #contact input[type=submit] { font-size: 4vw; height: 8vw; }
+  table { font-size: 4vw; }
+
+  td a img.social { height: 30%; }
+
+  #informacoes, #textocont, #contact, #redes, #about, figure#profile, figure#imagem_port, #desc { width: 100%; margin: 2vw; } 
+}
+
+@media only screen and (min-resolution: 2dppx){    
+    body { width: 97%; margin: 20vw auto; font-size: 3vw; min-width: 90%; }
+  
+    nav li a { font-size: 4.5vw; padding: 1vw 2.5vw 1vw 2.5vw; }
+    nav { height: 8vw;}
+    nav ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+    nav a img { top: -20vw; right: 37%; width: 220px; }
+
+    .coluna{ width: 95%; }
+    #lcol { text-align: center; }
+  
+    #cabecalho p.btn a { height: 8vw; }
+    #cabecalho h1, #cabecalhocont h1 { font: 8vw Georgia, Serif; }
+    #cabecalho h3, #cabecalhocont h3 { font: 6vw Georgia, Serif; }
+  
+    figure { width: 55%; min-width: 35%; }
+    figure#habilidade{ width: 55%; } 
+    figcaption p { font-size: 4vw;}
+
+    #contact { font-size: 4vw; }
+    #contact textarea { font-size: 4vw;  height: 15vw; }
+    #contact input { font-size: 4vw; height: 8vw; }
+    #contact input[type=submit] { font-size: 4vw; height: 8vw; }
+    table { font-size: 4vw; }
+
+    td a img.social { height: 30%; }
+
+   #informacoes, #textocont, #contact, #redes, #about, figure#profile, figure#imagem_port, #desc { width: 100%; margin: 2vw; } 
+}
+
+@media only screen and (min-resolution: 3dppx){    
+  body { width: 97%; margin: 20vw auto; font-size: 3vw; min-width: 90%; }
+
+  nav li a { font-size: 4.5vw; padding: 1vw 2.5vw 1vw 2.5vw; }
+  nav { height: 8vw;}
+  nav ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  nav a img { top: -20vw; right: 37%; width: 220px; }
+
+  .coluna{ width: 95%; }
+  #lcol { text-align: center; }
+
+  #cabecalho p.btn a { height: 8vw; }
+  #cabecalho h1, #cabecalhocont h1 { font: 8vw Georgia, Serif; }
+  #cabecalho h3, #cabecalhocont h3 { font: 6vw Georgia, Serif; }
+
+  figure { width: 55%; min-width: 35%; }
+  figure#habilidade{ width: 55%; } 
+  figcaption p { font-size: 4vw;}
+
+  #contact { font-size: 4vw; }
+  #contact textarea { font-size: 4vw;  height: 15vw; }
+  #contact input { font-size: 4vw; height: 8vw; }
+  #contact input[type=submit] { font-size: 4vw; height: 8vw; }
+  table { font-size: 4vw; }
+
+  td a img.social { height: 30%; }
+
+  #informacoes, #textocont, #contact, #redes, #about, figure#profile, figure#imagem_port, #desc { width: 100%; margin: 2vw; } 
+}
+

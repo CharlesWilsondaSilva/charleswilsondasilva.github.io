@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <!-- Layout trabalhado usando tags semânticas -->
+  <head>
+    <!-- definindo conjunto de caracteres para UTF-8 e outros dados para facilitar a indexação -->
+    <meta charset="UTF-8">    
+	<meta name="description" content="Portfolio Template">    
+	<meta name="keywords" content="Portifólio, Design Web, HTML">    
+	<meta name="author" content="Criador de conteúdo">    
+	<meta name=viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- linkando com a folha de estilos do site -->
+    <title>
+      Meu Portfolio
+    </title>
+  </head>
+
+  <body>
+    <nav> <!-- navbar com menu e logo -->
+      <a id="logotipo" href="index.html">
+        <img src="images/logo-new.png" alt="Meu logo" />
+      </a>
+
+      <ul> <!-- menu com Unordered List -->
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="active" href="portfolio.html">Portfolio</a><!-- class="active"define qual link foi acessado e sua formatação -->
+        </li>
+        <li>
+          <a href="sobre.html">Sobre</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <header id="cabecalhocont"> <!-- cabeçalho com id para formatação exclusiva -->
+      <h1>Monitor de Informática</h1>
+      
+    </header>
+    <hr>
+    <section><!-- separação em divs dentro da section para facilitar formatação e alinhamento responsivo -->
+      <div id = "desc_port_item">
+
+          <figure id="imagem_port">
+            <img id="portItem" src="images/portfolio-item-3.jpg" alt="Item do Portfolio" />
+          </figure>
+          <div id="desc">
+            <h4>Monitor de Infomática:</h4>              
+            <p>  
+			Ministrava oficinas para alunos das graduações da Uninove, utilizando metodologias ativas para maximizar o aprendizado dos alunos.	
+            Preparava treinamentos para outros monitores aprimorarem seus conhecimentos, preparava aulas e atividades, e as corrigia passo a passo com os alunos.			
+			<p>			
+			<b>Metodologias ativas utilizadas:</b><br><br>
+			<b>A aprendizagem baseada em projetos (ABP)</b> – em inglês, project based learning (PBL) – tem por objetivo fazer com que os alunos adquiram conhecimento por meio da solução colaborativa de desafios.
+			Sendo assim, o aluno precisa se esforçar para explorar as soluções possíveis dentro de um contexto específico ― seja utilizando a tecnologia ou os diversos recursos disponíveis, o que incentiva a capacidade de desenvolver um perfil investigativo e crítico perante alguma situação.
+			Além disso, o professor não deve expor toda metodologia a ser trabalhada, a fim de que os alunos busquem os conhecimentos por si mesmos. Porém, é necessário que o educador dê um feedback nos projetos e mostre quais foram os erros e acertos.
+			</p>
+			<p>
+			<b>Aprendizagem baseada em problemas - </b>
+			O método da <b>Aprendizagem Baseada em Problemas</b> tem como propósito tornar o aluno capaz de construir o aprendizado conceitual, procedimental e atitudinal por meio de problemas propostos que o expõe a situações motivadoras e o prepara para o mundo do trabalho.
+			Enquanto a aprendizagem baseada em projetos exige que os alunos coloquem a “mão na massa”, a aprendizagem baseada em problemas é focada na parte teórica da resolução de casos.
+			</p>
+			<p>
+			<b>Estudo de caso -</b>
+			A prática pedagógica de Estudo de Casos tem origem no método de Aprendizagem Baseada em Problemas.
+			O Estudo de Caso oferece aos estudantes a oportunidade de direcionar sua própria aprendizagem, enquanto exploram seus conhecimentos em situações relativamente complexas.
+			São relatos de situações do mundo real, apresentadas aos estudantes com a finalidade de ensiná-los, preparando-os para a resolução de problemas reais
+			</p>
+			<p>			
+			<b>A aprendizagem entre pares e times</b> – em inglês, team based learning (TBL) –, como o próprio nome revela, se trata da formação de equipes dentro de determinada turma para que o aprendizado seja feito em conjunto e haja compartilhamento de ideias.
+			Seja em um estudo de caso ou em um projeto, é possível que os alunos resolvam os desafios e trabalhem juntos, o que pode ser benéfico na busca pelo conhecimento. Afinal, com a ajuda mútua, se pode aprender e ensinar ao mesmo tempo, formando o pensamento crítico, que é construído por meio de discussões embasadas e levando em consideração opiniões divergentes.
+			</p>
+			<p>
+			<b>Ferramentas Ministradas:</b><br>
+            Ofice: Excel, Word, Power Point, Ms Project.<br>
+			Gsuite: Planilhas, Documentos, Apresentações, Keep.<br>
+			Desenvolvimento Web: HTML5, CSS3,PowerPoint para prototipação,WireFrame, Thimble. <br>
+			Outros: Trello, Prezi, Canva, Autocad.
+            </p>
+        </div>
+
+      </div>
+    </section>   
+    <footer> <!-- rodapé da página também construído usando a semântica -->
+      <p id = "esq">©2019 - Sysnatec - Todos os direitos reservados - Termos de Uso e Política de Privacidade</p>
+      <address><p id = "dir">Charles Wilson da Silva | 11 99274-5303</p></address><!-- tag address facilita indexação de conteúdo por mecanismos de pesquisa -->
+    </footer>
+  </body>
+
+</html>

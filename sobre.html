@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <!-- Layout trabalhado usando tags semânticas -->
+  <head>
+    <!-- definindo conjunto de caracteres para UTF-8 e outros dados para facilitar a indexação -->
+    <meta charset="UTF-8">    
+	<meta name="description" content="Portfolio Template">    
+	<meta name="keywords" content="Portifólio, Design Web, HTML">    
+	<meta name="author" content="Criador de conteúdo">    
+	<meta name=viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- linkando com a folha de estilos do site -->
+    <title>
+      Meu Portfolio
+    </title>
+  </head>
+
+  <body>
+    <nav> <!-- navbar com menu e logo -->
+      <a id="logotipo" href="index.html">
+        <img src="images/logo-new.png" alt="Meu logo" />
+      </a>
+
+      <ul> <!-- menu com Unordered List -->
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a class="active" href="sobre.html">Sobre</a><!-- class="active"define qual link foi acessado e sua formatação -->
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <header id="cabecalhocont"><!-- cabeçalho com id para formatação exclusiva -->
+      <h1>Sobre mim!</h1>
+    </header>
+    <hr>
+    <section><!-- separação em divs dentro da section para facilitar formatação e alinhamento responsivo -->
+      <div id = "sobre">
+
+          <div id="about">
+            
+            <h4>Minha História</h4>
+            <p>
+            •	Possuo mais de 9 anos de experiência como técnico em Informática com foco em montagem e manutenção de micros e montagem de redes para pequenas e médias empresas;<br>
+			•	Profissional 3 anos de experiência como instrutor de informática;<br>
+			•	Habilidades em programação e banco de dados;<br>
+			•	Linguagens de programação: C, C#, C++, Python, Javascript, Java.<br>
+			•	Banco de Dados: Oracle, Sql Server, MySQL, Pl/Sql. <br>
+			•	Devops.<br>
+			•	Redes: Cisco CCNA R&S, montagem e manutenção de micros. <br>
+			•	Conhecimentos em desenvolvimento ágil, Scrum, Cobit, ITIL.<br>
+			•	Gerenciamento de projetos com MS Project, Power bi;<br>
+			•	Graduado em Tecnologia em Sistemas para Internet pela Uninove;<br>
+			•	Cursando 7° semestre de Ciências da computação pela Uninove;<br>
+			•	Domínio total em informática, pacote office Microsoft Word (Avançado), Excel (Avançado) e Power Point (Avançado), MS Project (Avançado);<br>
+			•	Espanhol (Avançado), Inglês (intermediário).<br>
+
+            </p>
+
+            <h4>Minha Formação</h4>
+            <p>
+            •	Licenciatura em Matemática 2017/2020 - (Trancado) – UNINOVE<br>
+			•	Ciência da Computação 2016/2020 - (Cursando) – UNINOVE<br>
+			•	Tecnólogo em Sistemas para internet 2016/2019 – UNINOVE<br>
+			•	Técnico em Informática - 2013/2015 – UNINOVE
+            </p>			
+			<h4>Qualificações e Atividades complementares</h4>
+            <p>
+            •	CCNA Routing and Switching: Introduction to Networks – UNISAL <br>
+			•	Intro to Packet Tracer Mobile - Cisco Networking Academy<br>
+			•	Introduction to Packet Tracer 0419 - Cisco Networking Academy<br>
+			•	Entrepreneurship - Cisco Networking Academy<br> 
+			•	Be Your Own Boss - Cisco Networking Academy<br>
+			•	Introduction to IoT - Cisco Networking Academy<br>
+			•	Get Connected – Cisco Networking Academy<br>
+			•	Introdução ao Hacking e Pentest – Solyd<br>  
+			•	Python Básico – Solyd<br> 
+ 
+            </p>
+        </div>
+        <figure id="profile">
+          <img id="perfil" src="images/profile.jpeg" alt="Perfil" />
+        </figure>
+
+      </div>
+    </section>
+    <footer> <!-- rodapé da página também construído usando a semântica -->
+      <p id = "esq">©2019 - Sysnatec - Todos os direitos reservados - Termos de Uso e Política de Privacidade</p>
+      <address><p id = "dir">Charles Wilson da Silva | 11 99274-5303</p></address><!-- tag address facilita indexação de conteúdo por mecanismos de pesquisa -->
+    </footer>
+  </body>
+
+</html>
